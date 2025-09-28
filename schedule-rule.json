@@ -1,0 +1,12 @@
+{
+  "Name": "DailyLambdaTrigger",
+  "Description": "Triggers Lambda every day at midnight UTC",
+  "ScheduleExpression": "cron(0 0 * * ? *)",
+  "State": "ENABLED",
+  "Targets": [
+    {
+      "Arn": "arn:aws:lambda:ap-southeast-1:151567229573:function:FreshLambda",
+      "Id": "LambdaTarget"
+    }
+  ]
+}
